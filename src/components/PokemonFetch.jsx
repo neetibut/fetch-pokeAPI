@@ -52,32 +52,6 @@ const PokemonFetch = () => {
 
     fetchAllPokemon();
   }, []);
-  //   useEffect(() => {
-  //     const fetchAllPokemon = async () => {
-  //       // code here
-  //       try {
-  //         // 1. Fetch initial list of Pokémon
-  //         const response = await fetch(
-  //           "https://pokeapi.co/api/v2/pokemon?limit=1"
-  //         );
-  //         const data = await response.json();
-
-  //         // 2. Create an array of promises for fetching each Pokémon's details
-  //         const pokemonData = await Promise.all(
-  //           data.results.map(async (pokemon) => {
-  //             const res = await fetch(pokemon.url);
-  //             return res.json();
-  //           })
-  //         );
-  //         // 3. Set the state with the detailed Pokémon data
-  //         setPokemonList(pokemonData);
-  //       } catch (err) {
-  //         console.error("Failed to fetch Pokémon:", err);
-  //       }
-  //     };
-  //     // 4. Call the function to fetch all Pokémon details
-  //     fetchAllPokemon();
-  //   }, []);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
