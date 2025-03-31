@@ -1,4 +1,3 @@
-// import useEffect and useState
 import { useEffect, useState } from "react";
 
 const typeColors = {
